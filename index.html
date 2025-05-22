@@ -6,24 +6,30 @@
 </head>
 <body>
     <header class="header"> 
-        <img src="Images/image.tn.jpeg" alt="Логотип" width="150" height="150">
-        <h1> TranslateNow</h1>
-        <a href="login.html">Вход/Зарегистрироваться</a>
-        <nav>
-            <ul>
+        <img class="header__logo" src="Images/image.tn.jpeg" alt="Логотип" width="150" height="150">
+        <h1 class="header__title">TranslateNow</h1>
+        <a class="header__button" href="login.html">Вход</a>
+        <a class="header__button" href="registration.html">Зарегистрироваться</a>
+        <nav class="header__menu">
+            <ul class="menu">
                 <li><a href="#">Меню</a></li>
+                <li class="menu__item menu__item--active"><a class="menu__link" href="#">Перевод документов</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Голосовой перевод</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Помощь</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
         <section>
             <div class="text">
-                <h2>Введите текст для перевода</h2>
+                <h2 class="text__title">Введите текст для перевода</h2>
             </div>
         </section>
         <section>
             <div class="translation">
-                <h2>Переводческий текст</h2>
+                <h2 class="translation__title">Переводческий текст</h2>
             </div>
         </section>
         <section>
@@ -33,7 +39,7 @@
         </section>
         <section>
             <div class="languages">
-                <h2>Популярные языки</h2>
+                <h2 class="languages__name">Популярные языки</h2>
             </div>
             <ul>
                 <li>
@@ -59,29 +65,6 @@
             </ul>
         </section>
     </main>
-        
-    
-    </header>
-    <h1>Заголовок 1</h1>
-    <h2>Заголовок 2</h2>
-    <h3>Заголовок 3</h3>
-   <p>Абзац 1 текста 1</p> 
-   <p>Абзац 2 текста 1</p>
-   <p>Абзац 3 текста 1</p>
-   <h2>Маркированный список</h2>
-   <ul>
-    <li>Пункт 1 маркированного списка</li>
-    <li>Пункт 2 маркированного списка</li>
-    <li>Пункт 3 маркированного списка</li>
-   </ul>
-   <h2>Нумерованный список</h2>
-   <ol>
-    <li>Пункт 1 маркированного списка</li>
-    <li>Пункт 2 маркированного списка</li>
-    <li>Пункт 3 маркированного списка</li>
-   </ol>
-</body>
-</html>
     <footer class="footer">
         <p> Сайт создан Аканаевой Миланой группа ЛВ-22, Зайнуллиной Ренатой группа ЛВ-22</p>
         <ul>
