@@ -1,0 +1,507 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    }
+    @font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Italic.ttf");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #861150;
+    color: #333;
+    overflow-x: hidden;
+}
+.hero { 
+padding-top: 150px;
+}
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 2.5rem;
+    color: #d5006d;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #d5006d;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #b0004b;
+}
+
+.hero {
+    background-image: url('https://via.placeholder.com/1200x600/ffb6c1/ffffff?text=Ваш+Вишлист');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section:nth-child(even) {
+    background-color: #fff;
+}
+
+.section:nth-child(odd) {
+    background-color: #ffeef8;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+}
+
+.image-container {
+    margin-top: 30px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: #861150;
+}
+.section input, .section button {
+    margin: 5px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+
+
+.wishlist-button:hover {
+    background-color: #45a049; /* Более темный зеленый при наведении */
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+.wishlist-button:focus {
+    outline: none;
+}
+
+/* Стили для кнопок редактирования и удаления */
+.edit-button, .delete-button {
+    background-color: #4CAF50; /* Зеленый цвет для редактирования */
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button {
+    background-color: #f44336; /* Красный цвет для удаления */
+}
+
+.edit-button:hover, .delete-button:hover {
+    background-color: #45a049; /* Темно-зеленый для редактирования */
+}
+
+.delete-button:hover {
+    background-color: #d32f2f; /* Темно-красный для удаления */
+}
+
+button:focus {
+    outline: none;
+}
+/* Стили для кнопок редактирования и удаления */
+.action-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.action-button {
+    background-color: #4CAF50; /* Зеленый цвет для редактирования */
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #45a049; /* Темно-зеленый для редактирования */
+}
+
+.action-button:focus {
+    outline: none;
+}
+
+/* Добавление тени к изображениям */
+.image-container img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень с размытой границей */
+    transition: box-shadow 0.3s ease-in-out; /* Плавный переход при наведении */
+}
+
+/* Эффект при наведении курсора на изображения (увеличение тени) */
+.image-container img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Увеличенная тень при наведении */
+}
+
+
+@media screen and (max-width: 768px) {
+    /* header */
+    header {
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    nav {
+        margin-top: 5px;
+    }
+    nav a {
+        margin: 0 10px;
+        font-size: 1rem;
+    }
+
+    /* hero */
+    .hero {
+        padding-top: 100px;
+        height: 400px;
+        background-position: center center;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    /* section */
+    .section {
+        padding: 50px 15px;
+    }
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 1rem;
+        max-width: 90%;
+        margin: 0 auto;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
+    /* image container */
+    .image-container img {
+        max-width: 280px;
+        border-radius: 12px;
+    }
+
+    /* inputs and buttons in section */
+    .section input, .section button {
+        width: 90%;
+        font-size: 1rem;
+        padding: 8px;
+        margin: 5px auto;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    /* action buttons */
+    .action-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 15px;
+    }
+    .action-button {
+        width: 100%;
+        margin: 8px 0;
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+
+    /* footer */
+    footer p {
+        font-size: 0.9rem;
+    }
+     html {
+            scroll-behavior: smooth;
+        }
+}
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #ff69b4; /* Розовый цвет */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Круглая форма */
+    font-size: 24px;
+    display: none; /* Скрыта по умолчанию */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0.7;
+}
+
+#scrollToTop:hover {
+    opacity: 1;
+    background-color: #ff1493; /* Более яркий розовый при наведении */
+}
+
+/* Предзагрузчик */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f8bbd0; /* светло-розовый */
+    border-top-color: #e91e63; /* насыщенный розовый */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Плавное скрытие предзагрузчика */
+#preloader.hide {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+/* Предзагрузчик */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #ddd;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+/* Предзагрузчик — фон */
+#preloader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: #ffe6f0; /* нежно-розовый фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Спиннер — крупный, розовый */
+.spinner {
+  width: 100px;
+  height: 100px;
+  border: 10px solid #fcd6e3; /* светло-розовая обводка */
+  border-top: 10px solid #ff4fa6; /* ярко-розовая часть */
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+
+
+/* Обёртка слайдера */
+.swiper-section {
+  padding: 40px 20px;
+  background-color: #ffe6f0;
+}
+
+/* Контейнер слайдера */
+.swiper {
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: #ffe4f0;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
+  border-radius: 16px;
+}
+
+/* Слайды */
+.swiper-slide {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+  transform: scale(1.05);
+}
+
+/* Картинки в слайдах */
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Кнопки навигации */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff69b4;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 105, 180, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #ff69b4;
+  color: white;
+}
+
+/* Пагинация */
+.swiper-pagination-bullet {
+  background: #ff69b4;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #ff1493;
+}
+

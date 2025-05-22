@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Мой Вишлист</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+</head>
+<body class="page-body">
+
+    <header class="header">
+        <h1 class="header-title">Мой Вишлист</h1>
+        <nav class="navigation">
+            <a href="index.html" class="nav-link">Вернуться на главную</a>
+        </nav>
+    </header>
+
+    <div id="preloader">
+    <div class="spinner"></div>
+</div>
+
+
+    <div class="hero hero-main">
+        <h2 class="hero-title">Добавьте товары в ваш вишлист</h2>
+        <p class="hero-description">Легко добавляйте, редактируйте и удаляйте товары.</p>
+    </div>
+
+    <section id="wishlist" class="section wishlist-section">
+        <h3 class="section-title">Добавьте товар в ваш вишлист:</h3>
+        <div class="wishlist-form">
+            <input type="text" id="itemInput" class="input-field" placeholder="Название товара" />
+            <input type="text" id="itemLink" class="input-field" placeholder="Ссылка на товар" />
+            <input type="text" id="itemImage" class="input-field" placeholder="URL изображения" />
+            <input type="text" id="itemDescription" class="input-field" placeholder="Описание" />
+            <input type="text" id="itemCategory" class="input-field" placeholder="Категория" />
+            <button id="addButton" class="button-add" onclick="addItem()">Добавить</button>
+        </div>
+
+        <h3 class="section-title">Ваш вишлист:</h3>
+        <ul id="itemList" class="wishlist-list"></ul>
+    </section>
+
+    <section class="wishlist">  
+<h2 class="job__title">
+<ul class="job__list">
+</ul>
+</h2>
+</section>
+
+    <footer class="footer">
+        <p class="footer-text">&copy; 2025 Вишлист. Все права защищены.</p>
+    </footer>
+
+    <script src="js/personal_wishlist.js"></script>
+
+</body>
+</html>

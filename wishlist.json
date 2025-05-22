@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Наушники Sony",
+    "link": "https://example.com/sony",
+    "description": "Беспроводные наушники с шумоподавлением",
+    "image": "https://example.com/image.jpg",
+    "category": "Электроника"
+  },
+  {
+    "title": "Книга по JavaScript",
+    "link": "https://example.com/book",
+    "description": "Глубокое погружение в JS",
+    "image": "https://example.com/book.jpg",
+    "category": "Книги"
+  }
+]
